@@ -1,3 +1,5 @@
+import { BottonNav } from "@/components"
+
 export default function ProtectedLayout ({
   children
 }: {
@@ -7,6 +9,9 @@ export default function ProtectedLayout ({
     <>
       <h2>Ruta protegida</h2>
       {children}
+      <div>
+        <BottonNav />
+      </div>
     </>
   )
 }

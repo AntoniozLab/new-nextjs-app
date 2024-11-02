@@ -6,7 +6,7 @@ export default function GeneralLayout({
 }) {
   return (
     <div>
-      <h1>General Layout</h1>
+      <h1>Public Layout</h1>
       {children}
     </div>
   );

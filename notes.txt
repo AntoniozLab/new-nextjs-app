@@ -1,6 +1,0 @@
-tsconfig.json: cómo el compilador de typescript trabajará
-
-postcss.config.js: transformas css mediante plugins.
-Ejemplo:
-- autoprefixer
-- postcss-preset-env

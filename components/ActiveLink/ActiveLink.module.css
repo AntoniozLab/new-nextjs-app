@@ -1,0 +1,8 @@
+.link {
+  @apply mr-10 transition-all hover:underline hover:text-blue-300;
+}
+
+.active-link {
+  @apply text-blue-400;
+}
+

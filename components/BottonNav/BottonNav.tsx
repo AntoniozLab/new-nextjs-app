@@ -1,27 +1,26 @@
-import React from 'react'
 import { ActiveLink } from '../ActiveLink/ActiveLink';
 
 const navItems = [
   {
     path: '/home',
-    text: 'Home'
+    text: 'Home',
   },
   {
     path: '/categories',
-    text: 'Categories'
+    text: 'Categories',
   },
   {
     path: '/departments',
-    text: 'Departments'
-  }
+    text: 'Departments',
+  },
 ];
 
 export const BottonNav = () => {
   return (
-    <div className="flex bg-primary bg-opacity-30 py-1 px-2">
-      {navItems.map(navItem=> (
-        <ActiveLink key={navItem.path} { ...navItem } />
+    <div className="flex px-2 py-1">
+      {navItems.map((navItem) => (
+        <ActiveLink key={navItem.path} {...navItem} />
       ))}
     </div>
-  )
-}
+  );
+};

@@ -1,18 +1,10 @@
-import { BottonNav } from "@/components"
+import { BottonNav } from '@/components/BottonNav';
 
-export default function ProtectedLayout ({
-  children
-}: {
-  children: React.ReactNode
-}) {
+export default function ProtectedLayout({ children }: { children: React.ReactNode }) {
   return (
-    <>
-      <div>
-        <BottonNav />
-      </div>
-      <h2>Ruta protegida</h2>
+    <div>
+      <BottonNav />
       {children}
-
-    </>
-  )
+    </div>
+  );
 }

@@ -1,17 +1,16 @@
-"use client";
+'use client';
 
 import Link from 'next/link';
 import React from 'react';
 import style from './ActiveLink.module.css';
 import { usePathname } from 'next/navigation';
 
-
 interface IProps {
   path: string;
   text: string;
 }
 
-export const ActiveLink= ({ path, text }: IProps) => {
+export const ActiveLink = ({ path, text }: IProps) => {
   const pathName = usePathname();
   return (
     <Link

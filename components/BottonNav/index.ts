@@ -1,1 +1,1 @@
-export { BottonNav } from "./BottonNav"
+export { BottonNav } from './BottonNav';

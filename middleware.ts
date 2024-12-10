@@ -6,12 +6,12 @@ export default function ProtectedMiddleware (request: NextRequest) {
 
   const { nextUrl } = request;
 
-  if (protectedPaths.some((path) => nextUrl.pathname.startsWith(path))) {
+  /* if (protectedPaths.some((path) => nextUrl.pathname.startsWith(path))) {
     const token = nextUrl.searchParams.get('token');
     if (!token ){
       const loginUrl = new URL('/login', request.url);
       return NextResponse.redirect(loginUrl)
     }
-  }
+  } */
   return NextResponse.next();
 }

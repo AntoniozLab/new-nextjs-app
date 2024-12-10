@@ -7,11 +7,12 @@ export default function ProtectedLayout ({
 }) {
   return (
     <>
-      <h2>Ruta protegida</h2>
-      {children}
       <div>
         <BottonNav />
       </div>
+      <h2>Ruta protegida</h2>
+      {children}
+
     </>
   )
 }
